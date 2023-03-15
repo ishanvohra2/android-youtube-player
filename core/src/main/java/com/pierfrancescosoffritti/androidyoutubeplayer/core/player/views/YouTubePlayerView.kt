@@ -25,7 +25,7 @@ class YouTubePlayerView(context: Context, attrs: AttributeSet? = null, defStyleA
     constructor(context: Context): this(context, null, 0)
     constructor(context: Context, attrs: AttributeSet? = null): this(context, attrs, 0)
 
-    private val legacyTubePlayerView: LegacyYouTubePlayerView = LegacyYouTubePlayerView(context)
+    var legacyTubePlayerView: LegacyYouTubePlayerView = LegacyYouTubePlayerView(context)
     private val fullScreenHelper = FullScreenHelper(this)
 
     // this is a publicly accessible API
